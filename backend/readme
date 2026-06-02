@@ -1,0 +1,164 @@
+# AI Financial Assistant
+
+An AI-powered financial assistant built using **Google ADK, Gemini, FastAPI, PostgreSQL, and SQLAlchemy**. The system enables users to manage expenses, create budgets, analyze spending patterns, and generate financial summaries through natural language conversations.
+
+## Features
+
+* User Authentication using JWT
+* Expense Tracking through natural language
+* Budget Creation and Management
+* Budget Summary Generation
+* Spending Analysis and Insights
+* Google Gemini-powered intent understanding
+* Google ADK multi-tool agent architecture
+* PostgreSQL database integration
+* REST APIs with FastAPI
+* Swagger API documentation
+
+## Tech Stack
+
+### Backend
+
+* Python
+* FastAPI
+* SQLAlchemy
+* PostgreSQL (Supabase)
+
+### AI & Agent Framework
+
+* Google Gemini API
+* Google ADK (Agent Development Kit)
+
+### Authentication
+
+* JWT Authentication
+* Password Hashing
+
+## Project Structure
+
+```text
+backend/
+│
+├── agent/
+│   ├── adk_finance_agent.py
+│   ├── agent.py
+│   └── __init__.py
+│
+├── tools/
+│   ├── adk_tools.py
+│   ├── expence_tools.py
+│   ├── budget_tools.py
+│   ├── summary_tools.py
+│   └── analytics_tools.py
+│
+├── services/
+│
+├── auth.py
+├── crud.py
+├── database.py
+├── model.py
+├── schemas.py
+├── main.py
+└── requirements.txt
+```
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone <your-repository-url>
+cd backend
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv aiv
+```
+
+Activate environment:
+
+Windows
+
+```bash
+aiv\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+GOOGLE_API_KEY=your_gemini_api_key
+DATABASE_URL=your_postgresql_connection_string
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+```
+
+## Running FastAPI
+
+```bash
+uvicorn main:app --reload
+```
+
+API Documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Running Google ADK Agent
+
+CLI Mode:
+
+```bash
+adk run agent
+```
+
+Web UI Mode:
+
+```bash
+adk web
+```
+
+## Example Queries
+
+```text
+I spent 450 on Swiggy
+```
+
+```text
+Set my food budget to 5000
+```
+
+```text
+Show my budget summary
+```
+
+```text
+Analyze my spending
+```
+
+## Future Enhancements
+
+* React/Flutter Frontend
+* Expense Visualization Dashboard
+* Multi-Agent Financial Planning
+* Monthly Financial Reports
+* RAG-based Personal Finance Knowledge Base
+* Cloud Deployment
+
+## Author
+
+Rhydam Sharma
+
+B.Tech CSE
+Shri Vaishnav Vidyapeeth Vishwavidyalaya

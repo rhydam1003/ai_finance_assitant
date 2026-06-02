@@ -1,0 +1,63 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+aiv/
+venv/
+env/
+
+# Environment Variables
+
+.env
+
+# VS Code
+
+.vscode/
+
+# Logs
+
+*.log
+
+# SQLite
+
+*.db
+*.sqlite3
+
+# ADK
+
+.adk/
+
+# Python Cache
+
+.pytest_cache/
+.mypy_cache/
+
+# Build
+
+build/
+dist/
+*.egg-info/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Coverage
+
+.coverage
+htmlcov/
+
+# Temporary Files
+
+temp/
+tmp/
+*.tmp
